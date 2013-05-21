@@ -1,0 +1,298 @@
+/
+/fonts/vera/Vera/unicode.14.font
+/fonts/lucidasans/unicode.6.font
+          0          60
+f          0          52           0         603           1 
+         52          60         603           0           0 /github/notabene/catenate/nanocluster Del Snarf Undo | Look 
+f          0          54          58          58           3 
+         54          30          58           1           0 /github/ Del Snarf Get | Look 
+f          0          55         937         937           5 
+         55          23         941           1           1 / Del Snarf Get | Look 
+f          0          56          96         127           7 
+         56          27         171           1           0 /bbb/ Del Snarf Get | Look 
+f          0          57         353         367           9 
+         57          66        1007           0           0 /bbb/Aide Del Snarf Undo | Look |fmt Edit ,s,192.168.1.11,gromit,g
+f          0          62         425         425          63 
+         62          71        1091           0           0 /bbb/inferno.mk Del Snarf Undo Redo | Look Edit ,s,cd /usr/inferno; ,,g
+f          0          67           0           9          65 
+         67          29           9           1           1 /netco/ Del Snarf Get | Look 
+f          0          68          30          73          67 
+         68          39         141           0           0 /netco/Aide Del Snarf Undo Redo | Look 
+f          0          70           0           0          69 
+         70          36         118           1           0 /netco/gromit/ Del Snarf Get | Look 
+f          0          64          29          29          71 
+         64          50          29           0           0 /bbb/includelinuxschedh.sed Del Snarf Undo | Look 
+f          0          72           0           0          73 
+         72          40         161           1           0 /netco/gromit/usr/ Del Snarf Get | Look 
+f          0          79           0           0          75 
+         79          48         659           1           0 /netco/gromit/usr/inferno/ Del Snarf Get | Look 
+f          0          80           0           0          77 
+         80          52          25           1           0 /netco/gromit/usr/inferno/usr/ Del Snarf Get | Look 
+f          0          81          42          42          78 
+         81          56          42           1           0 /netco/gromit/usr/inferno/usr/jdc/ Del Snarf Get | Look 
+f          0          82           9          18          80 
+         82          60          18           1           1 /netco/gromit/usr/inferno/usr/jdc/lib/ Del Snarf Get | Look 
+f          0          63         294         294          91 
+         63          35         306           0           0 /bbb/root.mk Del Snarf Undo | Look 
+f          0          59          47          81          93 
+         59          55          82           1           0 /n/local/home/jdc/Keyworded/bbb/ Del Snarf Get | Look  
+f          0          60        1070        1078          95 
+         60          40        2080           0           0 /bbb/inferno Del Snarf Undo Redo | Look 
+f          0          61         821         838          97 
+         61          31        1068           0           0 /mkconfig Del Snarf Put | Look 
+F          1           0         342         374           1         374 
+         47          42         374           0           0 /github/notabene/+Errors Del Snarf | Look 
+## master
+aide catenate
+/github/notabene/catenate/Aide
+git status --porcelain
+git status --porcelain --branch
+git rebase origin/master
+First, rewinding head to replay your work on top of it...
+Fast-forwarded master to origin/master.
+## master
+ M catenate/nanocluster
+[master e4b00bf] Update nanocluster plan.
+ 1 file changed, 2 insertions(+)
+git status --porcelain --branch
+f          1          49         194         194           5 
+         49          51         237           0           0 /github/notabene/catenate/+Errors Del Snarf | Look 
+f          1          51         302         310           7 
+         51          39         365           0           0 /github/notabene/Aide Del Snarf | Look 
+f          1          48         359         386           9 
+         48          53         537           0           0 /github/notabene/catenate/Aide Del Snarf Redo | Look 
+f          1          50         413         466          11 
+         50          25         466           0           0 +Errors Del Snarf | Look 
+F          1           5       11282       11282          22       11285 
+         58          30       11285           0           0 /bbb/+Errors Del Snarf | Look 
+1654 "Sh":fail:host: exit: 1
+/usr/bin/7z
+
+7-Zip [64] 9.20  Copyright (c) 1999-2010 Igor Pavlov  2010-11-18
+p7zip Version 9.20 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,2 CPUs)
+
+Usage: 7z <command> [<switches>...] <archive_name> [<file_names>...]
+       [<@listfiles...>]
+
+<Commands>
+  a: Add files to archive
+  b: Benchmark
+  d: Delete files from archive
+  e: Extract files from archive (without using directory names)
+  l: List contents of archive
+  t: Test integrity of archive
+  u: Update files to archive
+  x: eXtract files with full paths
+<Switches>
+  -ai[r[-|0]]{@listfile|!wildcard}: Include archives
+  -ax[r[-|0]]{@listfile|!wildcard}: eXclude archives
+  -bd: Disable percentage indicator
+  -i[r[-|0]]{@listfile|!wildcard}: Include filenames
+  -m{Parameters}: set compression Method
+  -o{Directory}: set Output directory
+  -p{Password}: set Password
+  -r[-|0]: Recurse subdirectories
+  -scs{UTF-8 | WIN | DOS}: set charset for list files
+  -sfx[{name}]: Create SFX archive
+  -si[{name}]: read data from stdin
+  -slt: show technical information for l (List) command
+  -so: write data to stdout
+  -ssc[-]: set sensitive case mode
+  -t{Type}: Set type of archive
+  -u[-][p#][q#][r#][x#][y#][z#][!newArchiveName]: Update options
+  -v{Size}[b|k|m|g]: Create volumes
+  -w[{path}]: assign Work directory. Empty path means a temporary directory
+  -x[r[-|0]]]{@listfile|!wildcard}: eXclude filenames
+  -y: assume Yes on all queries
+--rw-r--r-- U 0 jdc jdc 119627776 May 08 21:58 BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img.xz
+sh: 7z: './7z' file does not exist
+1757 "Sh":fail:'./7z' file does not exist
+
+7-Zip [64] 9.20  Copyright (c) 1999-2010 Igor Pavlov  2010-11-18
+p7zip Version 9.20 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,2 CPUs)
+
+Processing archive: BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img.xz
+
+Extracting  BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img
+
+Everything is Ok
+
+Size:       3657433088
+Compressed: 455544484
+--rw-rw-r-- U 0 jdc jdc 3657433088 May 08 21:58 BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img
+--rw-r--r-- U 0 jdc jdc  455544484 May 08 21:58 BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img.xz
+--rw-r--r-- U 0 jdc jdc        339 May 10 12:01 Aide
+--rw-rw-r-- U 0 jdc jdc 3657433088 May 08 21:58 BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img
+--rw-r--r-- U 0 jdc jdc  455544484 May 08 21:58 BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img.xz
+--rw-rw-r-- U 0 jdc jdc  413138944 May 10 14:12 BBB-eMMC-flasher-2013.05.08.img
+--rw-r--r-- U 0 jdc jdc  384073048 May 10 14:12 BBB-eMMC-flasher-2013.05.08.img.xz
+--rw-r--r-- U 0 jdc jdc       2084 May 10 00:03 inferno
+
+--rw-r--r-- U 0 jdc jdc        339 May 10 12:01 Aide
+--rw-rw-r-- U 0 jdc jdc 3657433088 May 08 21:58 BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img
+--rw-r--r-- U 0 jdc jdc  455544484 May 08 21:58 BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img.xz
+--rw-rw-r-- U 0 jdc jdc 1088421888 May 10 14:13 BBB-eMMC-flasher-2013.05.08.img
+--rw-r--r-- U 0 jdc jdc  384073048 May 10 14:12 BBB-eMMC-flasher-2013.05.08.img.xz
+--rw-r--r-- U 0 jdc jdc       2084 May 10 00:03 inferno
+1644 "Sh":killed
+1786 "Sh":killed
+--rw-r--r-- U 0 jdc jdc        339 May 10 12:01 Aide
+--rw-rw-r-- U 0 jdc jdc 3657433088 May 08 21:58 BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img
+--rw-r--r-- U 0 jdc jdc  455544484 May 08 21:58 BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img.xz
+--rw-rw-r-- U 0 jdc jdc 2304770048 May 10 14:13 BBB-eMMC-flasher-2013.05.08.img
+--rw-r--r-- U 0 jdc jdc  270458880 May 10 14:14 BBB-eMMC-flasher-2013.05.08.img.xz
+--rw-r--r-- U 0 jdc jdc       2084 May 10 00:03 inferno
+--rw-r--r-- U 0 jdc jdc        339 May 10 12:01 Aide
+--rw-rw-r-- U 0 jdc jdc 3657433088 May 08 21:58 BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img
+--rw-r--r-- U 0 jdc jdc  455544484 May 08 21:58 BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img.xz
+--rw-rw-r-- U 0 jdc jdc 2304770048 May 10 14:13 BBB-eMMC-flasher-2013.05.08.img
+--rw-r--r-- U 0 jdc jdc  384073048 May 10 14:14 BBB-eMMC-flasher-2013.05.08.img.xz
+--rw-r--r-- U 0 jdc jdc       2084 May 10 00:03 inferno
+
+7-Zip [64] 9.20  Copyright (c) 1999-2010 Igor Pavlov  2010-11-18
+p7zip Version 9.20 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,2 CPUs)
+
+Processing archive: BBB-eMMC-flasher-2013.05.08.img.xz
+
+file BBB-eMMC-flasher-2013.05.08.img
+already exists. Overwrite with 
+BBB-eMMC-flasher-2013.05.08.img?
+(Y)es / (N)o / (A)lways / (S)kip all / A(u)to rename all / (Q)uit? 
+
+Error:
+Unexpected end of input stream
+1803 "Sh":fail:host: exit: 2
+--rw-r--r-- U 0 jdc jdc        339 May 10 12:01 Aide
+--rw-rw-r-- U 0 jdc jdc 3657433088 May 08 21:58 BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img
+--rw-r--r-- U 0 jdc jdc  455544484 May 08 21:58 BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img.xz
+--rw-rw-r-- U 0 jdc jdc  257949696 May 10 14:15 BBB-eMMC-flasher-2013.05.08.img
+--rw-r--r-- U 0 jdc jdc  384073048 May 10 14:14 BBB-eMMC-flasher-2013.05.08.img.xz
+--rw-r--r-- U 0 jdc jdc       2084 May 10 00:03 inferno
+--rw-r--r-- U 0 jdc jdc        339 May 10 12:01 Aide
+--rw-rw-r-- U 0 jdc jdc 3657433088 May 08 21:58 BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img
+--rw-r--r-- U 0 jdc jdc  455544484 May 08 21:58 BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img.xz
+--rw-rw-r-- U 0 jdc jdc  383778816 May 10 14:15 BBB-eMMC-flasher-2013.05.08.img
+--rw-r--r-- U 0 jdc jdc  384073048 May 10 14:14 BBB-eMMC-flasher-2013.05.08.img.xz
+--rw-r--r-- U 0 jdc jdc       2084 May 10 00:03 inferno
+--rw-r--r-- U 0 jdc jdc        339 May 10 12:01 Aide
+--rw-rw-r-- U 0 jdc jdc 3657433088 May 08 21:58 BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img
+--rw-r--r-- U 0 jdc jdc  455544484 May 08 21:58 BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img.xz
+--rw-rw-r-- U 0 jdc jdc 2950545408 May 10 14:16 BBB-eMMC-flasher-2013.05.08.img
+--rw-r--r-- U 0 jdc jdc  384073048 May 10 14:14 BBB-eMMC-flasher-2013.05.08.img.xz
+--rw-r--r-- U 0 jdc jdc       2084 May 10 00:03 inferno
+--rw-rw-r-- U 0 jdc jdc 3657433088 May 08 21:58 BBB-eMMC-flasher-2013.04.13-DDR3-400MHz.img
+--rw-rw-r-- U 0 jdc jdc 3657433088 May 10 14:14 BBB-eMMC-flasher-2013.05.08.img
+
+7-Zip [64] 9.20  Copyright (c) 1999-2010 Igor Pavlov  2010-11-18
+p7zip Version 9.20 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,2 CPUs)
+
+Processing archive: BBB-eMMC-flasher-2013.05.08.img.xz
+
+Extracting  BBB-eMMC-flasher-2013.05.08.img
+
+Everything is Ok
+
+Size:       3657433088
+Compressed: 384073048
+usage: mount [-a|-b] [-coA9] [-C cryptoalg] [-k keyfile] [-q] net!addr|file|{command} mountpoint [spec]
+1838 "Sh":fail:usage
+/dev/sda5 on / type ext3 (rw,relatime,errors=remount-ro)
+proc on /proc type proc (rw)
+sysfs on /sys type sysfs (rw,noexec,nosuid,nodev)
+none on /sys/fs/fuse/connections type fusectl (rw)
+none on /sys/kernel/debug type debugfs (rw)
+none on /sys/kernel/security type securityfs (rw)
+udev on /dev type devtmpfs (rw,mode=0755)
+devpts on /dev/pts type devpts (rw,noexec,nosuid,gid=5,mode=0620)
+tmpfs on /run type tmpfs (rw,noexec,nosuid,size=10%,mode=0755)
+none on /run/lock type tmpfs (rw,noexec,nosuid,nodev,size=5242880)
+none on /run/shm type tmpfs (rw,nosuid,nodev)
+none on /run/user type tmpfs (rw,noexec,nosuid,nodev,size=104857600,mode=0755)
+binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,noexec,nosuid,nodev)
+gvfsd-fuse on /run/user/ian/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,user=ian)
+/dev/sda5 on / type ext3 (rw,relatime,errors=remount-ro)
+proc on /proc type proc (rw)
+sysfs on /sys type sysfs (rw,noexec,nosuid,nodev)
+none on /sys/fs/fuse/connections type fusectl (rw)
+none on /sys/kernel/debug type debugfs (rw)
+none on /sys/kernel/security type securityfs (rw)
+udev on /dev type devtmpfs (rw,mode=0755)
+devpts on /dev/pts type devpts (rw,noexec,nosuid,gid=5,mode=0620)
+tmpfs on /run type tmpfs (rw,noexec,nosuid,size=10%,mode=0755)
+none on /run/lock type tmpfs (rw,noexec,nosuid,nodev,size=5242880)
+none on /run/shm type tmpfs (rw,nosuid,nodev)
+none on /run/user type tmpfs (rw,noexec,nosuid,nodev,size=104857600,mode=0755)
+binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,noexec,nosuid,nodev)
+gvfsd-fuse on /run/user/ian/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,user=ian)
+/dev/sde2 on /media/ian/eMMC-Flasher type ext4 (rw,nosuid,nodev,uhelper=udisks2)
+umount: /media/ian is not mounted (according to mtab)
+1859 "Sh":fail:host: exit: 2
+/dev/sda5 on / type ext3 (rw,relatime,errors=remount-ro)
+proc on /proc type proc (rw)
+sysfs on /sys type sysfs (rw,noexec,nosuid,nodev)
+none on /sys/fs/fuse/connections type fusectl (rw)
+none on /sys/kernel/debug type debugfs (rw)
+none on /sys/kernel/security type securityfs (rw)
+udev on /dev type devtmpfs (rw,mode=0755)
+devpts on /dev/pts type devpts (rw,noexec,nosuid,gid=5,mode=0620)
+tmpfs on /run type tmpfs (rw,noexec,nosuid,size=10%,mode=0755)
+none on /run/lock type tmpfs (rw,noexec,nosuid,nodev,size=5242880)
+none on /run/shm type tmpfs (rw,nosuid,nodev)
+none on /run/user type tmpfs (rw,noexec,nosuid,nodev,size=104857600,mode=0755)
+binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,noexec,nosuid,nodev)
+gvfsd-fuse on /run/user/ian/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,user=ian)
+/dev/sde2 on /media/ian/eMMC-Flasher type ext4 (rw,nosuid,nodev,uhelper=udisks2)
+/dev/sda5 on / type ext3 (rw,relatime,errors=remount-ro)
+proc on /proc type proc (rw)
+sysfs on /sys type sysfs (rw,noexec,nosuid,nodev)
+none on /sys/fs/fuse/connections type fusectl (rw)
+none on /sys/kernel/debug type debugfs (rw)
+none on /sys/kernel/security type securityfs (rw)
+udev on /dev type devtmpfs (rw,mode=0755)
+devpts on /dev/pts type devpts (rw,noexec,nosuid,gid=5,mode=0620)
+tmpfs on /run type tmpfs (rw,noexec,nosuid,size=10%,mode=0755)
+none on /run/lock type tmpfs (rw,noexec,nosuid,nodev,size=5242880)
+none on /run/shm type tmpfs (rw,nosuid,nodev)
+none on /run/user type tmpfs (rw,noexec,nosuid,nodev,size=104857600,mode=0755)
+binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,noexec,nosuid,nodev)
+gvfsd-fuse on /run/user/ian/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,user=ian)
+/dev/sde2 on /media/ian/eMMC-Flasher type ext4 (rw,nosuid,nodev,uhelper=udisks2)
+/dev/sda5 on / type ext3 (rw,relatime,errors=remount-ro)
+proc on /proc type proc (rw)
+sysfs on /sys type sysfs (rw,noexec,nosuid,nodev)
+none on /sys/fs/fuse/connections type fusectl (rw)
+none on /sys/kernel/debug type debugfs (rw)
+none on /sys/kernel/security type securityfs (rw)
+udev on /dev type devtmpfs (rw,mode=0755)
+devpts on /dev/pts type devpts (rw,noexec,nosuid,gid=5,mode=0620)
+tmpfs on /run type tmpfs (rw,noexec,nosuid,size=10%,mode=0755)
+none on /run/lock type tmpfs (rw,noexec,nosuid,nodev,size=5242880)
+none on /run/shm type tmpfs (rw,nosuid,nodev)
+none on /run/user type tmpfs (rw,noexec,nosuid,nodev,size=104857600,mode=0755)
+binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,noexec,nosuid,nodev)
+gvfsd-fuse on /run/user/ian/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,user=ian)
+sh: internal: parse error: syntax error
+1929 "Sh":fail:parse error
+os: cannot exec: exec failed: No such file or directory
+1930 "Sh":fail:cannot exec: exec failed: No such file or directory
+1943 "Sh":killed
+1889 "Sh":killed
+1919 "Sh":killed
+1869 "Sh":killed
+1953 "Sh":killed
+2012 "Sh":killed
+2022 "Sh":killed
+sh: ssh: './ssh' file does not exist
+2134 "Sh":fail:'./ssh' file does not exist
+2135 "Sh":killed
+whatis host
+sh: which: './which' file does not exist
+2147 "Sh":fail:'./which' file does not exist
+/dis/host
+whatis host
+/dis/host
+f          1          66         405         405          39 
+         66          37         405           0           0 /dis/host Del Snarf Redo | Look sshfs
+F          1           7           0          17          69          17 
+         84          63          17           0           0 /netco/gromit/usr/inferno/usr/jdc/lib/+Errors Del Snarf | Look 
+2204 "Sh":killed

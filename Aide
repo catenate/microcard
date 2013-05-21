@@ -1,0 +1,4 @@
+Edit ,|sort|uniq
+git
+git add .
+git commit -a -m 'Add makefiles to set up bbb.'

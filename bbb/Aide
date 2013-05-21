@@ -1,0 +1,41 @@
+ $ echo 'PATH=$PATH:/usr/inferno/Linux/arm/bin' >> .profile
+$ scp includelinuxschedh.sed root@gromit:/home/wallace
+$ scp inferno.mk root@gromit:/home/wallace
+$ scp root.mk root@gromit:/home/wallace
+$ ssh -Y -C gromit
+$ ssh-agent > ssh-agent.out; . ssh-agent.out; ssh-add
+$ sudo dd if=BBB-eMMC-flasher-2013.05.08.img of=/dev/sde bs=1M
+DO NOT opkg upgrade
+Dump /bbb/dump
+Edit ,|sort|uniq
+Load /bbb/dump
+New inferno
+New inferno.mk
+New root.mk
+bbb# opkg install gcc
+bbb$ make -n -f inferno.mk
+bbb$ ssh -l jdc jdc-desktop.local cat /home/jdc/.ssh/id_rsa.pub >> .ssh/authorized_keys
+bbb# hostname gromit
+cp /n/local/home/jdc/Keyworded/bbb/go1.1.src.tar.gz .
+gromit
+host 7z
+host 7z x BBB-eMMC-flasher-2013.05.08.img.xz
+host fdisk -l
+host mount
+host sudo chmod 777 .
+host sudo umount /dev/sde
+host sudo umount /media/ian/eMMC-Flasher
+host which 7z
+ls -l *.img
+ls -F | mc
+mkdir /netco
+opkg install openssh-keygen
+opkg update
+rm BBB-eMMC-flasher-2013.05.08.img
+web http://192.168.7.2
+web https://help.ubuntu.com/community/Installation/FromImgFiles
+xterm
+host scp go1.1.src.tar.gz gromit:/home/jdc
+ln -s /usr/bin/arm-*-gcc* gcc*
+as?
+unistd.h?
