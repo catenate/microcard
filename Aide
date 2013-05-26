@@ -1,3 +1,4 @@
 Edit ,|sort|uniq
 git
 log 1 git
+ls -F | mc

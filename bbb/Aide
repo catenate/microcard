@@ -8,9 +8,9 @@ $ sudo dd if=BBB-eMMC-flasher-2013.05.08.img of=/dev/sde bs=1M
 $ kill ntpd process and then ntpdate
 /netco/gromit
 DO NOT opkg upgrade
-Dump /bbb/dump
+Dump /github/microcard/bbb/dump
 Edit ,|sort|uniq
-Load /bbb/dump
+Load /github/microcard/bbb/dump
 New inferno
 New golang.mk
 bbb# opkg install gcc
