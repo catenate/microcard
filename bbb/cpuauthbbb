@@ -1,0 +1,103 @@
+% cat /usr/jdc/lib/wmsetup
+trfs '#U*' /n/local
+ndb/cs
+auth/factotum
+auth/feedkey
+styxlisten -A 'tcp!*!styx' export /
+% svc/auth
+Key: 
+% svc/rstyx
+% listen: got connection on tcp!*!inflogin from 192.168.1.8!45332
+logind: no password entry for jdc: '/mnt/keys/jdc' does not exist
+listen: got connection on tcp!*!inflogin from 192.168.1.8!45333
+logind: no password entry for jdc: '/mnt/keys/jdc' does not exist
+
+% ps
+       1        1        jdc    0:00.0        alt    93K Wm
+       2        1        jdc    0:00.0    release    17K Wmlib[$Sys]
+       4        1        jdc    0:00.0        alt    17K Wmlib
+       5        1        jdc    0:00.0    release    17K Wmlib[$Sys]
+       6        1        jdc    0:00.0        alt    13K Wmsrv
+       8        8        jdc    0:00.0        alt    88K Toolbar
+       9        1        jdc    0:00.0        alt    13K Wmsrv
+      10        8        jdc    0:00.0        alt    18K Toolbar
+      12        1        jdc    0:00.0        alt    13K Wmsrv
+      17       16        jdc    0:00.0       recv    18K Plumber
+      18       16        jdc    0:00.0        alt    18K Plumber
+      21        8        jdc    0:00.0    release    36K Styx[$Sys]
+      22        8        jdc    0:00.0    release    36K Styx[$Sys]
+      24       23        jdc    0:00.0        alt    17K Cs
+      26       26        jdc    0:00.0        alt    30K Factotum+Authio
+      28       27        jdc    0:00.0    release    10K Feedkey[$Sys]
+      29       27        jdc    0:00.0        alt    10K Feedkey
+      31        1        jdc    0:00.0        alt    13K Wmsrv
+      33        8        jdc    0:00.0    release    79K Sh[$Sys]
+      34        8        jdc    0:00.0    release     8K Styxlisten[$Sys]
+      35        8        jdc    0:00.0    release    74K Export[$Sys]
+      37       36        jdc    0:00.0        alt    29K WmSh
+      38        1        jdc    0:00.0        alt    13K Wmsrv
+      39       36        jdc    0:00.0    release   100K Sh[$Sys]
+      59       36        jdc    0:00.0        alt     9K Listen
+      61       36        jdc    0:00.0    release     9K Listen[$Sys]
+      63       36        jdc    0:00.0        alt     9K Listen
+      65       36        jdc    0:00.0    release     9K Listen[$Sys]
+      67       36        jdc    0:00.0        alt     9K Listen
+      69       36        jdc    0:00.0    release     9K Listen[$Sys]
+      71       36        jdc    0:00.0        alt     9K Listen
+      73       36        jdc    0:00.0    release     9K Listen[$Sys]
+      76       36        jdc    0:00.0        alt     9K Listen
+      78       36        jdc    0:00.0    release     9K Listen[$Sys]
+      83       36        jdc    0:00.0      ready    74K Ps[$Sys]
+% cat /dis/svc/auth
+#!/dis/sh.dis -n
+load std
+or {ftest -e /net/dns} {ftest -e /env/emuhost} {ndb/dns}
+or {ftest -e /net/cs} {ndb/cs}
+or {ftest -f /keydb/signerkey} {echo 'auth: need to use createsignerkey(8)' >[1=2]; raise nosignerkey}
+or {ftest -f /keydb/keys} {echo 'auth: need to create /keydb/keys' >[1=2]; raise nokeys}
+and {auth/keyfs} {
+	listen -v -t -A 'tcp!*!inflogin' {auth/logind&}
+	listen -v -t -A 'tcp!*!infkey' {auth/keysrv&}
+	listen -v -t -A 'tcp!*!infsigner' {auth/signer&}
+	listen -v -t -A 'tcp!*!infcsigner' {auth/countersigner&}
+}
+# run svc/registry separately if desired
+% auth/keyfs
+Key: 
+% ps|grep -i key
+      28       27        jdc    0:00.0    release    10K Feedkey[$Sys]
+      29       27        jdc    0:00.0        alt    10K Feedkey
+      86       85        jdc    0:00.0       recv    25K Keyfs
+      88       85        jdc    0:00.0       recv    25K Keyfs
+% ls /mnt
+/mnt/9win
+/mnt/acme
+/mnt/arch
+/mnt/diary
+/mnt/factotum
+/mnt/gossip
+/mnt/icontact
+/mnt/ilog
+/mnt/incall
+/mnt/isubs
+/mnt/itrack
+/mnt/keys
+/mnt/keysrv
+/mnt/quiz
+/mnt/registry
+/mnt/rstyxreg
+/mnt/schedule
+/mnt/vmail
+/mnt/wm
+/mnt/wrap
+/mnt/wsys
+% ls /mnt/keys
+/mnt/keys/jdc
+% listen: got connection on tcp!*!inflogin from 192.168.1.8!45335
+rstyxd: cmd: auxi/cpuslave -- /dis/sh 
+rstyxd: cmd: auxi/cpuslave -- os -a 
+rstyxd: cmd: auxi/cpuslave -- os uname -a 
+rstyxd: cmd: auxi/cpuslave -- os uname -a 
+rstyxd: cmd: auxi/cpuslave -- /dis/sh 
+
+% 

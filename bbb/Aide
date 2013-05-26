@@ -5,18 +5,23 @@ $ scp root.mk root@gromit:/home/wallace
 $ ssh -Y -C gromit
 $ ssh-agent > ssh-agent.out; . ssh-agent.out; ssh-add
 $ sudo dd if=BBB-eMMC-flasher-2013.05.08.img of=/dev/sde bs=1M
+$ kill ntpd process and then ntpdate
+/netco/gromit
 DO NOT opkg upgrade
 Dump /bbb/dump
 Edit ,|sort|uniq
 Load /bbb/dump
 New inferno
-New inferno.mk
-New root.mk
+New golang.mk
 bbb# opkg install gcc
 bbb$ make -n -f inferno.mk
 bbb$ ssh -l jdc jdc-desktop.local cat /home/jdc/.ssh/id_rsa.pub >> .ssh/authorized_keys
+bbb% styxlisten -A 'tcp!*!styx' export /
+% mount -A 'tcp!gromit!styx' /n/gromit
+% cpu gromit uname -a
 bbb# hostname gromit
 cp /n/local/home/jdc/Keyworded/bbb/go1.1.src.tar.gz .
+cp *.mk /netco/gromit/home/jdc/
 gromit
 host 7z
 host 7z x BBB-eMMC-flasher-2013.05.08.img.xz

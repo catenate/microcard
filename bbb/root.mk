@@ -1,4 +1,24 @@
-all: /home/jdc /usr/inferno /usr/inferno-20130518.tgz /usr/local/plan9port
+first:
+
+go: /usr/local/go /usr/local/go1.1.src.tar.gz
+
+inferno: /usr/inferno /usr/inferno-20130518.tgz
+
+jdc: /home/jdc
+
+ntppkg:
+	opkg update
+	opkg install ntp ntpdate
+
+ntpset:
+	rm /etc/localtime
+	ln -s /usr/share/zoneinfo/America/Chicago /etc/localtime
+	/etc/init.d/ntpd stop -p /run/ntpd.pid
+	ntpdate pool.ntp.org
+	date
+	/etc/init.d/ntpd start -p /run/ntpd.pid
+
+plan9port: /usr/local/plan9port
 
 /home/jdc:
 	useradd jdc
@@ -27,3 +47,12 @@ libxt-dev_1.1.2-r0_armv7a.ipk:
 
 /usr/include/X11/IntrinsicP.h: libxt-dev_1.1.2-r0_armv7a.ipk
 	opkg install $<
+
+/usr/local/go1.1.src.tar.gz: /usr/local
+	cd /usr/local; wget http://go.googlecode.com/files/go1.1.src.tar.gz
+
+/usr/local/go: /usr/share/zoneinfo/Europe/Berlin
+	cd /usr/local; mkdir go; chown jdc go
+
+/usr/share/zoneinfo/Europe/Berlin:
+	cd /usr/share/zoneinfo/Europe; wget http://artfiles.org/cygwin.org/usr/share/zoneinfo/Europe/Berlin

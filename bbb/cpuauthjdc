@@ -1,0 +1,125 @@
+% auth/createsignerkey jdc-desktop.local
+% ls /keydb
+/keydb/countersigned
+/keydb/keys
+/keydb/signed
+/keydb/signerkey
+% svc/auth
+Key: 
+Confirm key: 
+% auth/changelogin jdc
+new account
+secret: 
+confirm: 
+expires [DDMMYYYY/permanent, return = 23052014]: permanent
+change written
+% auth/createsignerkey jdc-desktop.local
+% getauthinfo tcp!gromit
+use signer [192.168.1.11]: gromit
+remote user name [jdc]: 
+password: 
+save in file [yes]: 
+% pwd
+/usr/jdc/keyring
+% cd
+% pwd
+/usr/jdc
+% cpu gromit
+% pwd
+/
+% cd /n/local
+% ls
+bin
+boot
+dev
+etc
+home
+lib
+lost+found
+media
+mnt
+proc
+run
+sbin
+sys
+tmp
+usr
+var
+% cd proc
+% cat cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 2 (v7l)
+BogoMIPS	: 297.40
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc08
+CPU revision	: 2
+
+Hardware	: Generic AM33XX (Flattened Device Tree)
+Revision	: 0000
+Serial		: 0000000000000000
+% os uname -a
+Linux beaglebone 3.8.11 #1 SMP Wed May 8 07:34:27 CEST 2013 armv7l GNU/Linux
+% cd /n
+% ls
+cd
+client
+disk
+dist
+dump
+ftp
+gridfs
+kfs
+local
+rdbg
+registry
+remote
+% cd /n/client
+% cd n/local
+% pwd
+/n/client/n/local
+% ls
+% cd /n/client
+% ls git*
+git/Aide
+github/Aide
+github/compinvest
+github/credo
+github/inferno-cat
+github/microcard
+github/notabene
+github/pfsh
+% exit
+% ls
+acme.dump
+keyring
+lib
+% cpu gromit os -a
+usage: os [-d dir] [-m mount] [-n] [-N nice] [-b] command [arg...]
+% cpu gromit os uname -a
+Linux beaglebone 3.8.11 #1 SMP Wed May 8 07:34:27 CEST 2013 armv7l GNU/Linux
+% pwd
+/usr/jdc
+% os uptime
+ 06:43:35 up 28 days, 23:26,  6 users,  load average: 2.15, 2.17, 2.21
+% os w
+ 06:44:24 up 28 days, 23:27,  6 users,  load average: 2.07, 2.15, 2.20
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+ian      tty7     :0               25Apr13 28days 21:03m  0.03s /bin/sh /etc/xd
+ian      pts/0    :0.0             27Apr13  8:22m 11:06  10:08  gnome-terminal
+ian      pts/1    :0.0             16May13 32:18m  0.59s 10:08  gnome-terminal
+ian      pts/2    :0.0             17May13  7:28m 21.69s 10:08  gnome-terminal
+ian      pts/6    :0.0             Sat15   34:42m  0.51s 10:08  gnome-terminal
+ian      pts/8    :0.0             06:30   13:57   0.33s 10:08  gnome-terminal
+% os uname -a
+Linux jdc-desktop 3.5.0-28-generic #48-Ubuntu SMP Tue Apr 23 23:03:38 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux
+% cpu gromit
+% os uname -a
+Linux beaglebone 3.8.11 #1 SMP Wed May 8 07:34:27 CEST 2013 armv7l GNU/Linux
+% os w
+ 22:22:34 up 4 days, 17 min,  2 users,  load average: 0.08, 0.05, 0.05
+USER     TTY        LOGIN@   IDLE   JCPU   PCPU WHAT
+jdc      pts/0     Wed22   47:07m  3:53m  3:53m emu
+root     tty2      31Dec99 4894days 21.39s  0.42s gnome-session
