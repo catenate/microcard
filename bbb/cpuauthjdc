@@ -123,3 +123,11 @@ Linux beaglebone 3.8.11 #1 SMP Wed May 8 07:34:27 CEST 2013 armv7l GNU/Linux
 USER     TTY        LOGIN@   IDLE   JCPU   PCPU WHAT
 jdc      pts/0     Wed22   47:07m  3:53m  3:53m emu
 root     tty2      31Dec99 4894days 21.39s  0.42s gnome-session
+
+% getauthinfo tcp!gromit
+use signer [$SIGNER]: gromit
+remote user name [jdc]: 
+password: 
+save in file [yes]: 
+% cpu gromit os uname -a
+Linux beaglebone 3.8.13 #1 SMP Mon May 20 17:07:58 CEST 2013 armv7l GNU/Linux

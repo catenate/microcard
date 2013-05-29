@@ -1,46 +1,49 @@
- $ echo 'PATH=$PATH:/usr/inferno/Linux/arm/bin' >> .profile
+$ . ~/ssh-agent.out; ssh-copy-id gromit; ssh -Y -C gromit
+$ echo 'PATH=$PATH:/usr/inferno/Linux/arm/bin' >> .profile
+$ kill ntpd process and then ntpdate
 $ scp includelinuxschedh.sed root@gromit:/home/wallace
 $ scp inferno.mk root@gromit:/home/wallace
 $ scp root.mk root@gromit:/home/wallace
-$ ssh -Y -C gromit
-$ ssh-agent > ssh-agent.out; . ssh-agent.out; ssh-add
+$ ssh-agent > ssh-agent.out; ssh-copy-id gromit;. ssh-agent.out; ssh-add
 $ sudo dd if=BBB-eMMC-flasher-2013.05.08.img of=/dev/sde bs=1M
-$ kill ntpd process and then ntpdate
+% cpu gromit uname -a
+% mount -A 'tcp!gromit!styx' /n/gromit
 /netco/gromit
 DO NOT opkg upgrade
 Dump /github/microcard/bbb/dump
 Edit ,|sort|uniq
 Load /github/microcard/bbb/dump
-New inferno
 New golang.mk
+New inferno
+as?
+bbb# hostname gromit
 bbb# opkg install gcc
+bbb$ echo 'PATH=$PATH:/usr/inferno/Linux/arm/bin' >> .profile
+bbb$ emu -g1280x968 wm/wm
+bbb$ export DISPLAY=jdc-desktop.local:0.0
 bbb$ make -n -f inferno.mk
 bbb$ ssh -l jdc jdc-desktop.local cat /home/jdc/.ssh/id_rsa.pub >> .ssh/authorized_keys
 bbb% styxlisten -A 'tcp!*!styx' export /
-% mount -A 'tcp!gromit!styx' /n/gromit
-% cpu gromit uname -a
-bbb# hostname gromit
-cp /n/local/home/jdc/Keyworded/bbb/go1.1.src.tar.gz .
 cp *.mk /netco/gromit/home/jdc/
+cp /n/local/home/jdc/Keyworded/bbb/go1.1.src.tar.gz .
 gromit
 host 7z
 host 7z x BBB-eMMC-flasher-2013.05.08.img.xz
 host fdisk -l
 host mount
+host scp go1.1.src.tar.gz gromit:/home/jdc
 host sudo chmod 777 .
 host sudo umount /dev/sde
 host sudo umount /media/ian/eMMC-Flasher
 host which 7z
-ls -l *.img
+ln -s /usr/bin/arm-*-gcc* gcc*
 ls -F | mc
+ls -l *.img
 mkdir /netco
 opkg install openssh-keygen
 opkg update
 rm BBB-eMMC-flasher-2013.05.08.img
+unistd.h?
 web http://192.168.7.2
 web https://help.ubuntu.com/community/Installation/FromImgFiles
 xterm
-host scp go1.1.src.tar.gz gromit:/home/jdc
-ln -s /usr/bin/arm-*-gcc* gcc*
-as?
-unistd.h?

@@ -1,0 +1,4 @@
+#!/dis/sh
+zero = $0
+host = `{echo $zero | sed 's,.*/,,'}
+cpu $host $*

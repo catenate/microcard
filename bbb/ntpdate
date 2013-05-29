@@ -1,0 +1,14 @@
+beaglebone:~# date
+Sun Jan  2 10:42:39 CST 2000
+beaglebone:~# ps|grep ntp
+beaglebone:~# ps -aef|grep ntp
+root     17448     1  0 10:41 ?        00:00:00 /usr/bin/ntpd -p /run/ntpd.pid
+root     17449 17448  0 10:41 ?        00:00:00 /usr/bin/ntpd -p /run/ntpd.pid
+root     17462 17332  0 10:43 pts/1    00:00:00 grep ntp
+beaglebone:~# kill 17448
+beaglebone:~# ps -aef|grep ntp
+root     17466 17332  0 10:43 pts/1    00:00:00 grep ntp
+beaglebone:~# ntpdate pool.ntp.org
+27 May 18:45:03 ntpdate[17467]: step time server 66.175.209.17 offset 422866889.044274 sec
+beaglebone:~# date
+Mon May 27 18:45:06 CDT 2013

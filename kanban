@@ -1,5 +1,6 @@
+next: use pins to support and brace black instead of 1x4 plate, and to join enclosures horizontally
 next: re-setup gromit as Inferno cpu host using master builder or second bbb as auth 
-next: each (cluster cc i o) do script runs its  .i→.o transform on a random (eg fortune hosts) cluster machine via cpu
+next: each (cluster cc i o) do script runs its  .i→.o transform on a random (eg fortune hosts) cluster machine via cpu, running an Inferno cross-compiler
 backlog: use ccache on server, if cache misses send job to agents
 backlog: use ccache on agents via /n/client from master builder, to keep them anonymous, little-vested, and lightweight
 backlog: order raspberry pi (rpi)?

@@ -2,20 +2,24 @@
 /fonts/vera/Vera/unicode.14.font
 /fonts/lucidasans/unicode.6.font
           0          59
-f          0           9           0           0           2 
-          9          40          50           1           0 /github/microcard/ Del Snarf Get | Look 
-f          0          10          16          16           4 
-         10          45          42           0           0 /github/microcard/Aide Del Snarf Undo | Look 
-f          0           8           0           0          14 
-          8          44         235           1           0 /github/microcard/bbb/ Del Snarf Get | Look 
-f          0           4         405         436          17 
-          4          49        1338           0           0 /github/microcard/bbb/Aide Del Snarf Undo | Look 
-f          0          12           0        1403          55 
-         12          47        1403           0           0 /github/microcard/kanban Del Snarf Undo | Look 
-f          1           1         341         341           2 
+f          0           4         454         485           2 
+          4          44        1338           0           0 /github/microcard/bbb/Aide Del Snarf | Look 
+f          0           6          17          21           4 
+          6          40          42           0           0 /github/microcard/Aide Del Snarf | Look 
+f          0           7           0           0          13 
+          7          44         235           1           0 /github/microcard/bbb/ Del Snarf Get | Look 
+f          0           8         405         436          15 
+          8          44        1338           0           0 /github/microcard/bbb/Aide Del Snarf | Look 
+f          0           5           0           0          50 
+          5          40          59           1           0 /github/microcard/ Del Snarf Get | Look 
+f          0           9           0        1403          54 
+          9          42        1403           0           0 /github/microcard/kanban Del Snarf | Look 
+f          1           1         764         764           2 
           1          23         764           0           0 /Aide Del Snarf | Look 
-F          1           1         846         916           6         916 
-         11          43         916           0           0 /github/microcard/+Errors Del Snarf | Look 
+f          1          10         341         341           5 
+         10          23         764           0           0 /Aide Del Snarf | Look 
+F          1           2        1386        1402          49        1402 
+         11          52        1402           0           0 /github/microcard/+Errors Del Snarf Undo Put | Look 
 ## master
  M Aide
  M bbb/Aide
@@ -51,5 +55,26 @@ du: can't stat /gitco: '/gitco' file does not exist
 aide bbb
 /github/microcard/bbb/Aide
 /github/notabene/test/1/nb/sh-inferno/Aide
-f          1           2         322         322          97 
-          2          43         483           0           0 /usr/jdc/lib/wmsetup Del Snarf Undo | Look 
+## master
+ M Aide
+ M bbb/Aide
+ M bbb/dump
+?? kanban
+git add bbb
+git commit -a -m 'Add capture of parts of cpu auth setup.  Add makefile to set up Go.'
+git commit -a -m 'Update microcard network plan.'
+git push origin master
+git add .
+git status --porcelain --branch
+## master
+M  Aide
+M  bbb/Aide
+M  bbb/dump
+A  kanban
+[master 9f3087d] Update microcard network plan.
+ 4 files changed, 75 insertions(+), 300 deletions(-)
+ rewrite bbb/dump (99%)
+ create mode 100644 kanban
+182 "Sh":killed
+f          1          12         322         322          92 
+         12          38         483           0           0 /usr/jdc/lib/wmsetup Del Snarf | Look 

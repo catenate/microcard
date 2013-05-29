@@ -100,4 +100,9 @@ rstyxd: cmd: auxi/cpuslave -- os uname -a
 rstyxd: cmd: auxi/cpuslave -- os uname -a 
 rstyxd: cmd: auxi/cpuslave -- /dis/sh 
 
-% 
+% getauthinfo default
+use signer [$SIGNER]: localhost
+remote user name [jdc]: 
+password: 
+save in file [yes]: yes
+% svc/rstyx

@@ -1,3 +1,8 @@
+/usr/inferno/usr/jdc/lib/wmsetup: /usr/inferno/usr/jdc
+	echo "trfs '#U*' /n/local" > $@
+	echo 'ndb/cs' >> $@
+	echo "styxlisten -A 'tcp!*!styx' export /" >> $@
+
 /usr/inferno/usr/jdc: /usr/inferno/Linux/arm/bin/emu
 	cd /usr/inferno/usr; cp -p -r inferno jdc
 
